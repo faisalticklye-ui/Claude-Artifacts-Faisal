@@ -1,0 +1,2206 @@
+{
+ "accounts": {
+  "mtvjjrsfyeijii": {
+   "amount": 145563.01,
+   "asOf": 1789048912253,
+   "created": 1789045584494,
+   "cur": "INR",
+   "example": false,
+   "name": "HDFC NRE",
+   "type": "savings"
+  },
+  "mtvjk4tytgwcj2": {
+   "amount": 0,
+   "asOf": 1789048912253,
+   "created": 1789045601398,
+   "cur": "INR",
+   "example": false,
+   "name": "ICICI NRE",
+   "type": "savings"
+  },
+  "mtvkhnlqjpwrah": {
+   "amount": 13125.48,
+   "asOf": 1789048912253,
+   "created": 1789047165374,
+   "cur": "INR",
+   "example": false,
+   "name": "ICICI NRO",
+   "type": "savings"
+  },
+  "mtvkivvupd99w2": {
+   "amount": 2295.523,
+   "asOf": 1789049619259,
+   "created": 1789047222762,
+   "cur": "KWD",
+   "example": false,
+   "name": "ABK Salary",
+   "type": "savings"
+  },
+  "mtvkj3bs35xy11": {
+   "amount": 1926,
+   "asOf": 1789048912253,
+   "created": 1789047232408,
+   "cur": "KWD",
+   "example": false,
+   "name": "ABK Alfouz",
+   "type": "savings"
+  },
+  "mtvkj9ru3lc4al": {
+   "amount": 0,
+   "asOf": 1789048912253,
+   "created": 1789047240762,
+   "cur": "KWD",
+   "example": false,
+   "name": "NBK",
+   "type": "savings"
+  },
+  "mtvkle5feb7eoj": {
+   "amount": 5000,
+   "asOf": 1789048912253,
+   "created": 1789047339747,
+   "cur": "KWD",
+   "example": false,
+   "name": "Emergency fund",
+   "type": "emergency"
+  },
+  "mtvklizt05bs1k": {
+   "amount": 21729.617,
+   "apr": 7.25,
+   "asOf": 1789048912253,
+   "created": 1789047346025,
+   "cur": "KWD",
+   "example": false,
+   "name": "Loan",
+   "payment": 302,
+   "type": "debt"
+  },
+  "mtvklo5kn0k7cl": {
+   "amount": 1319.701,
+   "apr": 0,
+   "asOf": 1789048912253,
+   "created": 1789047352712,
+   "cur": "KWD",
+   "example": false,
+   "name": "ABK Credit",
+   "payment": 120,
+   "type": "debt"
+  },
+  "mtvklxclcq0025": {
+   "amount": 894.33,
+   "apr": 0,
+   "asOf": 1789048912253,
+   "created": 1789047364629,
+   "cur": "KWD",
+   "example": false,
+   "name": "AMEX Credit",
+   "payment": 150,
+   "type": "debt"
+  },
+  "mtvksjdmntzpfs": {
+   "amount": 2881460.47,
+   "asOf": 1789048912253,
+   "created": 1789047673114,
+   "cur": "INR",
+   "example": false,
+   "name": "Investment",
+   "type": "investment"
+  }
+ },
+ "bills": {
+  "mtvm7mmn7kqeeu": {
+   "account": "mtvkivvupd99w2",
+   "amount": 460,
+   "cat": "housing",
+   "created": 1789050056784,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Rent"
+  },
+  "mtvm8cdcq9s64d": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "housing",
+   "created": 1789050090144,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Garbage +Car Clean"
+  },
+  "mtvm96rg9pxx6u": {
+   "account": "mtvkivvupd99w2",
+   "amount": 400,
+   "cat": "family",
+   "created": 1789050129532,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Parents exp"
+  },
+  "mtvm9kvctr0hae": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "subs",
+   "created": 1789050147816,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Raed Football Fees"
+  },
+  "mtvma3bmyookhw": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "subs",
+   "created": 1789050171730,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Anfaal & raed Arbi"
+  },
+  "mtvmajrg7ip1ab": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "household",
+   "created": 1789050193036,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Maid"
+  },
+  "mtvmavc6t9fqpu": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "subs",
+   "created": 1789050208038,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Anfaal Badminton"
+  },
+  "mtvmbdvml67lzi": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 1800,
+   "cat": "subs",
+   "created": 1789050232066,
+   "cur": "INR",
+   "day": 1,
+   "desc": "Anfaal Coloring Class"
+  },
+  "mtvmbuebnuvf1g": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 2500,
+   "cat": "subs",
+   "created": 1789050253475,
+   "cur": "INR",
+   "day": 1,
+   "desc": "Faiza Yoga Class"
+  },
+  "muiuf63932dbdi": {
+   "account": "mtvkivvupd99w2",
+   "amount": 302,
+   "cat": "loan",
+   "created": 1790454567573,
+   "cur": "KWD",
+   "day": 1,
+   "desc": "Loan Installment"
+  }
+ },
+ "entries": {
+  "fx-mtvm7mmn7kqeeu-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 460,
+   "cat": "housing",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Rent",
+   "fixedId": "mtvm7mmn7kqeeu",
+   "month": "2026-09"
+  },
+  "fx-mtvm7mmn7kqeeu-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 460,
+   "cat": "housing",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Rent",
+   "fixedId": "mtvm7mmn7kqeeu",
+   "month": "2026-10"
+  },
+  "fx-mtvm8cdcq9s64d-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "housing",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Garbage +Car Clean",
+   "fixedId": "mtvm8cdcq9s64d",
+   "month": "2026-09"
+  },
+  "fx-mtvm8cdcq9s64d-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "housing",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Garbage +Car Clean",
+   "fixedId": "mtvm8cdcq9s64d",
+   "month": "2026-10"
+  },
+  "fx-mtvm96rg9pxx6u-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 400,
+   "cat": "family",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Parents exp",
+   "fixedId": "mtvm96rg9pxx6u",
+   "month": "2026-09"
+  },
+  "fx-mtvm96rg9pxx6u-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 340,
+   "cat": "family",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Parents exp",
+   "fixedId": "mtvm96rg9pxx6u",
+   "month": "2026-10"
+  },
+  "fx-mtvm9kvctr0hae-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "subs",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Raed Football Fees",
+   "fixedId": "mtvm9kvctr0hae",
+   "month": "2026-09"
+  },
+  "fx-mtvm9kvctr0hae-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "subs",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Raed Football Fees",
+   "fixedId": "mtvm9kvctr0hae",
+   "month": "2026-10"
+  },
+  "fx-mtvma3bmyookhw-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "subs",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Anfaal & raed Arbi",
+   "fixedId": "mtvma3bmyookhw",
+   "month": "2026-09"
+  },
+  "fx-mtvma3bmyookhw-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "subs",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Anfaal & raed Arbi",
+   "fixedId": "mtvma3bmyookhw",
+   "month": "2026-10"
+  },
+  "fx-mtvmajrg7ip1ab-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "household",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Maid",
+   "fixedId": "mtvmajrg7ip1ab",
+   "month": "2026-09"
+  },
+  "fx-mtvmajrg7ip1ab-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "household",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Maid",
+   "fixedId": "mtvmajrg7ip1ab",
+   "month": "2026-10"
+  },
+  "fx-mtvmavc6t9fqpu-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "subs",
+   "created": 1789050339837,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Anfaal Badminton",
+   "fixedId": "mtvmavc6t9fqpu",
+   "month": "2026-09"
+  },
+  "fx-mtvmavc6t9fqpu-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "subs",
+   "created": 1790848181285,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Anfaal Badminton",
+   "fixedId": "mtvmavc6t9fqpu",
+   "month": "2026-10"
+  },
+  "fx-mtvmbdvml67lzi-2026-09": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 1800,
+   "cat": "subs",
+   "created": 1789050339838,
+   "cur": "INR",
+   "date": "2026-09-01",
+   "desc": "Anfaal Coloring Class",
+   "fixedId": "mtvmbdvml67lzi",
+   "month": "2026-09"
+  },
+  "fx-mtvmbdvml67lzi-2026-10": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 1800,
+   "cat": "subs",
+   "created": 1790848181285,
+   "cur": "INR",
+   "date": "2026-10-01",
+   "desc": "Anfaal Coloring Class",
+   "fixedId": "mtvmbdvml67lzi",
+   "month": "2026-10"
+  },
+  "fx-mtvmbuebnuvf1g-2026-09": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 2500,
+   "cat": "subs",
+   "created": 1789050339838,
+   "cur": "INR",
+   "date": "2026-09-01",
+   "desc": "Faiza Yoga Class",
+   "fixedId": "mtvmbuebnuvf1g",
+   "month": "2026-09"
+  },
+  "fx-mtvmbuebnuvf1g-2026-10": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 1500,
+   "cat": "subs",
+   "created": 1790848181286,
+   "cur": "INR",
+   "date": "2026-10-01",
+   "desc": "Faiza Yoga Class",
+   "fixedId": "mtvmbuebnuvf1g",
+   "month": "2026-10"
+  },
+  "fx-muiuf63932dbdi-2026-09": {
+   "account": "mtvkivvupd99w2",
+   "amount": 302,
+   "cat": "loan",
+   "created": 1790454606507,
+   "cur": "KWD",
+   "date": "2026-09-26",
+   "desc": "Loan Installment",
+   "fixedId": "muiuf63932dbdi",
+   "month": "2026-09"
+  },
+  "fx-muiuf63932dbdi-2026-10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 302,
+   "cat": "loan",
+   "created": 1790848181286,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Loan Installment",
+   "fixedId": "muiuf63932dbdi",
+   "month": "2026-10"
+  },
+  "mtvl43t1zp7vx6": {
+   "account": "mtvkivvupd99w2",
+   "amount": 155.5,
+   "cat": "debtextra",
+   "created": 1789048212805,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Amex Bill payment",
+   "month": "2026-09"
+  },
+  "mtvlr8vz6wpzkd": {
+   "account": "mtvkivvupd99w2",
+   "amount": 9.75,
+   "cat": "transport",
+   "created": 1789049292479,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Petrol",
+   "month": "2026-09"
+  },
+  "mtvlrx3vnmjt2w": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.44,
+   "cat": "dining",
+   "created": 1789049323867,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Subhan Q8",
+   "month": "2026-09"
+  },
+  "mtvltmcbgcx2jg": {
+   "account": "mtvkivvupd99w2",
+   "amount": 26,
+   "cat": "other",
+   "created": 1789049403228,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Nintendo Switch Games & Case",
+   "month": "2026-09"
+  },
+  "mtvluk7uu61lgi": {
+   "account": "mtvkivvupd99w2",
+   "amount": 8.8,
+   "cat": "dining",
+   "created": 1789049447130,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Costa Coffee",
+   "month": "2026-09"
+  },
+  "mtvluwc6vfl7qr": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4,
+   "cat": "dining",
+   "created": 1789049462838,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Keeta",
+   "month": "2026-09"
+  },
+  "mtvlvgi28ydkb2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.825,
+   "cat": "dining",
+   "created": 1789049488970,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Sanabel",
+   "month": "2026-09"
+  },
+  "mtvlx76lzzfefm": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.25,
+   "cat": "dining",
+   "created": 1789049570205,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Abbu Bday Dinner",
+   "month": "2026-09"
+  },
+  "mtvm0aw6lb0n29": {
+   "account": "mtvkivvupd99w2",
+   "amount": 27.15,
+   "cat": "dining",
+   "created": 1789049714982,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Lunch Saturday",
+   "month": "2026-09"
+  },
+  "mtvm0lgrxi9gri": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.45,
+   "cat": "dining",
+   "created": 1789049728683,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Dinner Sat",
+   "month": "2026-09"
+  },
+  "mtvm1ayrr81hlo": {
+   "account": "mtvkivvupd99w2",
+   "amount": 213.75,
+   "cat": "school",
+   "created": 1789049761731,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Anfaal second Term Fees",
+   "month": "2026-09"
+  },
+  "mtvm27xai8kcqc": {
+   "account": "mtvkivvupd99w2",
+   "amount": 20.3,
+   "cat": "other",
+   "created": 1789049804446,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Computer Stuff",
+   "month": "2026-09"
+  },
+  "mtvm2of8hr5rwo": {
+   "account": "mtvkivvupd99w2",
+   "amount": 7.19,
+   "cat": "dining",
+   "created": 1789049825828,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Trolley",
+   "month": "2026-09"
+  },
+  "mtvm39nvwux3f1": {
+   "account": "mtvkivvupd99w2",
+   "amount": 42,
+   "cat": "phone",
+   "created": 1789049853355,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "STC Bill Aug 2026",
+   "month": "2026-09"
+  },
+  "mtvm3jlpfivrvv": {
+   "account": "mtvkivvupd99w2",
+   "amount": 16,
+   "cat": "phone",
+   "created": 1789049866237,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Zain Aug Bill",
+   "month": "2026-09"
+  },
+  "mtvm641zwkr4rd": {
+   "account": "mtvkivvupd99w2",
+   "amount": 72,
+   "cat": "gifts",
+   "created": 1789049986055,
+   "cur": "KWD",
+   "date": "2026-09-03",
+   "desc": "Faiza Bday Gift- 01",
+   "month": "2026-09"
+  },
+  "mtvm708xjslynm": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 82,
+   "cat": "gifts",
+   "created": 1789050027777,
+   "cur": "KWD",
+   "date": "2026-09-03",
+   "desc": "Faiza Bday gift -2",
+   "month": "2026-09"
+  },
+  "mtvmfkwyrtg3it": {
+   "account": "mtvkivvupd99w2",
+   "amount": 9.6,
+   "cat": "dining",
+   "created": 1789050427810,
+   "cur": "KWD",
+   "date": "2026-09-03",
+   "desc": "Faisal Bday Cake",
+   "month": "2026-09"
+  },
+  "mtvmfvl044c0rc": {
+   "account": "mtvkivvupd99w2",
+   "amount": 33.335,
+   "cat": "groceries",
+   "created": 1789050441636,
+   "cur": "KWD",
+   "date": "2026-09-03",
+   "desc": "Lulu Hyper",
+   "month": "2026-09"
+  },
+  "mtvmhoicq7in19": {
+   "account": "mtvkivvupd99w2",
+   "amount": 12.7,
+   "cat": "dining",
+   "created": 1789050525780,
+   "cur": "KWD",
+   "date": "2026-09-04",
+   "desc": "Trolley",
+   "month": "2026-09"
+  },
+  "mtvmn3spb40gs1": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.1,
+   "cat": "dining",
+   "created": 1789050778873,
+   "cur": "KWD",
+   "date": "2026-09-05",
+   "desc": "Sat Dinner KFC",
+   "month": "2026-09"
+  },
+  "mtvmoqktzak3lx": {
+   "account": "mtvkivvupd99w2",
+   "amount": 6.5,
+   "cat": "shopping",
+   "created": 1789050855053,
+   "cur": "KWD",
+   "date": "2026-09-06",
+   "desc": "Faiza Clothes",
+   "month": "2026-09"
+  },
+  "mtvmp0acbt5n9w": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3,
+   "cat": "shopping",
+   "created": 1789050867636,
+   "cur": "KWD",
+   "date": "2026-09-06",
+   "desc": "Tailor Faiza Clothes",
+   "month": "2026-09"
+  },
+  "mtvmpj9zcuorq8": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2,
+   "cat": "dining",
+   "created": 1789050892247,
+   "cur": "KWD",
+   "date": "2026-09-06",
+   "desc": "Corn for Raed and Anfaal",
+   "month": "2026-09"
+  },
+  "mtvmpwhv323trb": {
+   "account": "mtvkivvupd99w2",
+   "amount": 60,
+   "cat": "other",
+   "created": 1789050909379,
+   "cur": "KWD",
+   "date": "2026-09-08",
+   "desc": "Abbu Rental car",
+   "month": "2026-09"
+  },
+  "mtvmqe94tcbru0": {
+   "account": "mtvkivvupd99w2",
+   "amount": 40,
+   "cat": "household",
+   "created": 1789050932392,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Abbu House Compressor",
+   "month": "2026-09"
+  },
+  "mtvmrc3osqnbri": {
+   "account": "mtvkivvupd99w2",
+   "amount": 16,
+   "cat": "fun",
+   "created": 1789050976260,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Faiza Phone Case",
+   "month": "2026-09"
+  },
+  "mtvmrq8cs9nd3e": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.25,
+   "cat": "dining",
+   "created": 1789050994572,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Lunch Subway",
+   "month": "2026-09"
+  },
+  "mtvms3seniovvu": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 630,
+   "cat": "gifts",
+   "created": 1789051012142,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Faiza bday Gift -3",
+   "month": "2026-09"
+  },
+  "mtvmsk0opt4kpp": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 1.4,
+   "cat": "transport",
+   "created": 1789051033176,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Carparks",
+   "month": "2026-09"
+  },
+  "mtvmsx538jju63": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.15,
+   "cat": "transport",
+   "created": 1789051050183,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Petrol",
+   "month": "2026-09"
+  },
+  "mtvmt8vdjjqq4u": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.85,
+   "cat": "dining",
+   "created": 1789051065385,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Pick Date",
+   "month": "2026-09"
+  },
+  "mtvmtsu34fp8cf": {
+   "account": "mtvkivvupd99w2",
+   "amount": 1.5,
+   "cat": "dining",
+   "created": 1789051091259,
+   "cur": "KWD",
+   "date": "2026-09-09",
+   "desc": "Sargam Rest",
+   "month": "2026-09"
+  },
+  "mtvmuvt9ahujp3": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.8,
+   "cat": "dining",
+   "created": 1789051141773,
+   "cur": "KWD",
+   "date": "2026-09-10",
+   "desc": "Lunch Shawarma factor",
+   "month": "2026-09"
+  },
+  "mtvmw6i6mw0q6f": {
+   "account": "mtvkj9ru3lc4al",
+   "amount": 15,
+   "cat": "subs",
+   "created": 1789051202286,
+   "cur": "KWD",
+   "date": "2026-09-03",
+   "desc": "Abbu IP Yearly Subscription",
+   "month": "2026-09"
+  },
+  "mtvmwyu89u9xsc": {
+   "account": "mtvkj9ru3lc4al",
+   "amount": 5,
+   "cat": "gifts",
+   "created": 1789051239008,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Mumma Sadka",
+   "month": "2026-09"
+  },
+  "mtvmxck91zb8lk": {
+   "account": "mtvkj9ru3lc4al",
+   "amount": 258,
+   "cat": "school",
+   "created": 1789051256793,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Raed School Fees term 2",
+   "month": "2026-09"
+  },
+  "mtvmz1z2dao2zw": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 12.8,
+   "cat": "dining",
+   "created": 1789051336382,
+   "cur": "KWD",
+   "date": "2026-09-05",
+   "desc": "Lunch",
+   "month": "2026-09"
+  },
+  "mtvmzgjyiv1rrg": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 4,
+   "cat": "groceries",
+   "created": 1789051355278,
+   "cur": "KWD",
+   "date": "2026-09-08",
+   "desc": "Dayfresh",
+   "month": "2026-09"
+  },
+  "mtvmzsr7gl8wn5": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 5.9,
+   "cat": "dining",
+   "created": 1789051371091,
+   "cur": "KWD",
+   "date": "2026-09-08",
+   "desc": "Dining",
+   "month": "2026-09"
+  },
+  "mtvn0a88yzen08": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 3.5,
+   "cat": "dining",
+   "created": 1789051393736,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Keeta",
+   "month": "2026-09"
+  },
+  "mtvn0msda7x1vc": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 7.45,
+   "cat": "dining",
+   "created": 1789051410014,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "talabat",
+   "month": "2026-09"
+  },
+  "mtvn0yqcsgf3hq": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 11,
+   "cat": "health",
+   "created": 1789051425493,
+   "cur": "KWD",
+   "date": "2026-09-01",
+   "desc": "Alseef Pharmacy",
+   "month": "2026-09"
+  },
+  "mtwr9kqmu2dbcj": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.65,
+   "cat": "dining",
+   "created": 1789119011902,
+   "cur": "KWD",
+   "date": "2026-09-10",
+   "desc": "Dinner keeta",
+   "month": "2026-09"
+  },
+  "mtx37en8w2fekc": {
+   "account": "mtvkivvupd99w2",
+   "amount": 1.5,
+   "cat": "shopping",
+   "created": 1789139066084,
+   "cur": "KWD",
+   "date": "2026-09-11",
+   "desc": "Nasser sports Umar",
+   "month": "2026-09"
+  },
+  "mtziv2ttwjzwyc": {
+   "account": "mtvkivvupd99w2",
+   "amount": 15.8,
+   "cat": "dining",
+   "created": 1789286297105,
+   "cur": "KWD",
+   "date": "2026-09-12",
+   "desc": "Keeta sat dinner",
+   "month": "2026-09"
+  },
+  "mtzivfow5cm4ce": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11.495,
+   "cat": "groceries",
+   "created": 1789286313776,
+   "cur": "KWD",
+   "date": "2026-09-12",
+   "desc": "Edde supermarket",
+   "month": "2026-09"
+  },
+  "mtzivwme619oiv": {
+   "account": "mtvkivvupd99w2",
+   "amount": 1.35,
+   "cat": "dining",
+   "created": 1789286335719,
+   "cur": "KWD",
+   "date": "2026-09-12",
+   "desc": "Teatime",
+   "month": "2026-09"
+  },
+  "mtziweyazilduo": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.65,
+   "cat": "school",
+   "created": 1789286359474,
+   "cur": "KWD",
+   "date": "2026-09-12",
+   "desc": "MRJ stationary",
+   "month": "2026-09"
+  },
+  "mu7g44gmpkv6pi": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 8.99,
+   "cat": "fun",
+   "created": 1789765409686,
+   "cur": "KWD",
+   "date": "2026-09-18",
+   "desc": "Steam COD Battle Pass",
+   "month": "2026-09"
+  },
+  "mu7g4vwnos70nq": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 18,
+   "cat": "fun",
+   "created": 1789765445255,
+   "cur": "KWD",
+   "date": "2026-09-18",
+   "desc": "PaddleChat",
+   "month": "2026-09"
+  },
+  "mu7g598w7w2wu2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.24,
+   "cat": "dining",
+   "created": 1789765462544,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "Trolley",
+   "month": "2026-09"
+  },
+  "mu7g5m17uay7yr": {
+   "account": "mtvkivvupd99w2",
+   "amount": 7.06,
+   "cat": "dining",
+   "created": 1789765479115,
+   "cur": "KWD",
+   "date": "2026-09-17",
+   "desc": "Dinner",
+   "month": "2026-09"
+  },
+  "mu7g65kokfchju": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5.3,
+   "cat": "transport",
+   "created": 1789765504440,
+   "cur": "KWD",
+   "date": "2026-09-17",
+   "desc": "Carwash",
+   "month": "2026-09"
+  },
+  "mu7g6qt88yexqt": {
+   "account": "mtvkivvupd99w2",
+   "amount": 48.85,
+   "cat": "transport",
+   "created": 1789765531964,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Reef Perfumes Faisal and Umar",
+   "month": "2026-09"
+  },
+  "mu7g72rkt6lw61": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.5,
+   "cat": "dining",
+   "created": 1789765547456,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Pick Juice",
+   "month": "2026-09"
+  },
+  "mu7g7jcmmbyiu9": {
+   "account": "mtvkivvupd99w2",
+   "amount": 24.75,
+   "cat": "shopping",
+   "created": 1789765568950,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Clothes Umar Centrepoint",
+   "month": "2026-09"
+  },
+  "mu7g7vns9e5c2x": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.6,
+   "cat": "transport",
+   "created": 1789765584904,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Fuel",
+   "month": "2026-09"
+  },
+  "mu7g8ur0sbcfhy": {
+   "account": "mtvkivvupd99w2",
+   "amount": 115,
+   "cat": "debtextra",
+   "created": 1789765630380,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Credit Card Payment",
+   "month": "2026-09"
+  },
+  "mu7g9n7kiyse34": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 12,
+   "cat": "phone",
+   "created": 1789765667264,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Open Ai subscription",
+   "month": "2026-09"
+  },
+  "mu7gagoi8ewg3k": {
+   "account": "mtvkivvupd99w2",
+   "amount": 50.32,
+   "cat": "groceries",
+   "created": 1789765705458,
+   "cur": "KWD",
+   "date": "2026-09-15",
+   "desc": "Lulu Groceries",
+   "month": "2026-09"
+  },
+  "mu7gas16zy2jpi": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5.95,
+   "cat": "dining",
+   "created": 1789765720170,
+   "cur": "KWD",
+   "date": "2026-09-15",
+   "desc": "Starbucks",
+   "month": "2026-09"
+  },
+  "mu7gb53d26r7r1": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.35,
+   "cat": "dining",
+   "created": 1789765737097,
+   "cur": "KWD",
+   "date": "2026-09-13",
+   "desc": "Keeta",
+   "month": "2026-09"
+  },
+  "mu7gcbawez9dd2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 121,
+   "cat": "shopping",
+   "created": 1789765791800,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "Centrepoint",
+   "month": "2026-09"
+  },
+  "mu7gco3rib4vk9": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11.5,
+   "cat": "shopping",
+   "created": 1789765808391,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "LC waikiki",
+   "month": "2026-09"
+  },
+  "mu7gevo2jb97l3": {
+   "account": "mtvkivvupd99w2",
+   "amount": 9,
+   "cat": "shopping",
+   "created": 1789765911506,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "RnB",
+   "month": "2026-09"
+  },
+  "mu7gg5llkz9mxk": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5.15,
+   "cat": "dining",
+   "created": 1789765971033,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "Dinner Friday Wok n Tadka",
+   "month": "2026-09"
+  },
+  "mu7gkev1d2m7ku": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.7,
+   "cat": "shopping",
+   "created": 1789766169661,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "LC waikiki Umar",
+   "month": "2026-09"
+  },
+  "mu7glxkslk1t13": {
+   "account": "mtvkivvupd99w2",
+   "amount": 32.9,
+   "cat": "shopping",
+   "created": 1789766240572,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "American Eagle Umar",
+   "month": "2026-09"
+  },
+  "mu7gpwh6cfobg2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 28.75,
+   "cat": "shopping",
+   "created": 1789766425770,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "Sephora",
+   "month": "2026-09"
+  },
+  "mu7gs7rq6a2w3v": {
+   "account": "mtvkivvupd99w2",
+   "amount": 62,
+   "cat": "dining",
+   "created": 1789766533718,
+   "cur": "KWD",
+   "date": "2026-09-16",
+   "desc": "Dinner PF Changs Family and Umar",
+   "month": "2026-09"
+  },
+  "mu7gxq1qzqwdne": {
+   "account": "mtvkivvupd99w2",
+   "amount": 27,
+   "cat": "personal",
+   "created": 1789766790686,
+   "cur": "KWD",
+   "date": "2026-09-18",
+   "desc": "Haircut",
+   "month": "2026-09"
+  },
+  "mu7gy79nv9np57": {
+   "account": "mtvkivvupd99w2",
+   "amount": 30,
+   "cat": "dining",
+   "created": 1789766813003,
+   "cur": "KWD",
+   "date": "2026-09-18",
+   "desc": "Ihop Breakfast",
+   "month": "2026-09"
+  },
+  "mu8plb2yy51v52": {
+   "account": "mtvkivvupd99w2",
+   "amount": 22.71,
+   "cat": "groceries",
+   "created": 1789841794138,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "Hakimi",
+   "month": "2026-09"
+  },
+  "mu8pllztyyy3l6": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11.6,
+   "cat": "dining",
+   "created": 1789841808281,
+   "cur": "KWD",
+   "date": "2026-09-19",
+   "desc": "Wah ji wah",
+   "month": "2026-09"
+  },
+  "mub9avilbto231": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.85,
+   "cat": "dining",
+   "created": 1789995832077,
+   "cur": "KWD",
+   "date": "2026-09-21",
+   "desc": "Lunch",
+   "month": "2026-09"
+  },
+  "mub9bkztvcb8o6": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 2,
+   "cat": "phone",
+   "created": 1789995865097,
+   "cur": "KWD",
+   "date": "2026-09-21",
+   "desc": "Google Hotspot subscription",
+   "month": "2026-09"
+  },
+  "mub9c0xgxkdasp": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 6,
+   "cat": "phone",
+   "created": 1789995885748,
+   "cur": "KWD",
+   "date": "2026-09-20",
+   "desc": "Netflix",
+   "month": "2026-09"
+  },
+  "mub9d2cr0hgm85": {
+   "account": "mtvkivvupd99w2",
+   "amount": 12.6,
+   "cat": "dining",
+   "created": 1789995934251,
+   "cur": "KWD",
+   "date": "2026-09-20",
+   "desc": "Lunch",
+   "month": "2026-09"
+  },
+  "mub9ddbqlgt3pk": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.5,
+   "cat": "dining",
+   "created": 1789995948470,
+   "cur": "KWD",
+   "date": "2026-09-20",
+   "desc": "Sargam sweets",
+   "month": "2026-09"
+  },
+  "muejq6cv4vqyk2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.85,
+   "cat": "dining",
+   "created": 1790194740655,
+   "cur": "KWD",
+   "date": "2026-09-23",
+   "desc": "Keeta lunch",
+   "month": "2026-09"
+  },
+  "muejqqiqz0qv6r": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 3,
+   "cat": "phone",
+   "created": 1790194766786,
+   "cur": "KWD",
+   "date": "2026-09-23",
+   "desc": "Vpn",
+   "month": "2026-09"
+  },
+  "muh1n8iszslfax": {
+   "account": "mtvkivvupd99w2",
+   "amount": 7.75,
+   "cat": "dining",
+   "created": 1790345768932,
+   "cur": "KWD",
+   "date": "2026-09-24",
+   "desc": "KFC dinner",
+   "month": "2026-09"
+  },
+  "muh1nqdkzu57fm": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11.7,
+   "cat": "transport",
+   "created": 1790345792072,
+   "cur": "KWD",
+   "date": "2026-09-24",
+   "desc": "Petrol",
+   "month": "2026-09"
+  },
+  "muh1oerjcmpryf": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 3.55,
+   "cat": "subs",
+   "created": 1790345823679,
+   "cur": "KWD",
+   "date": "2026-09-24",
+   "desc": "Osn",
+   "month": "2026-09"
+  },
+  "muh1oyzndy714i": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 5,
+   "cat": "subs",
+   "created": 1790345849891,
+   "cur": "KWD",
+   "date": "2026-09-23",
+   "desc": "Udemy",
+   "month": "2026-09"
+  },
+  "muh1pnqebhojwi": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.85,
+   "cat": "dining",
+   "created": 1790345881958,
+   "cur": "KWD",
+   "date": "2026-09-23",
+   "desc": "Lunch",
+   "month": "2026-09"
+  },
+  "mui3s2eppz1duz": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.35,
+   "cat": "health",
+   "created": 1790409819697,
+   "cur": "KWD",
+   "date": "2026-09-25",
+   "desc": "Pharmacy",
+   "month": "2026-09"
+  },
+  "mui3srvyb2s0vv": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 540,
+   "cat": "utilities",
+   "created": 1790409852718,
+   "cur": "INR",
+   "date": "2026-09-25",
+   "desc": "Sept MSEB bill",
+   "month": "2026-09"
+  },
+  "mujlx4j4fojuhn": {
+   "account": "mtvkivvupd99w2",
+   "amount": 43.75,
+   "cat": "health",
+   "created": 1790500754992,
+   "cur": "KWD",
+   "date": "2026-09-26",
+   "desc": "Metro Vaccination",
+   "month": "2026-09"
+  },
+  "mul0sqwm9q3yc1": {
+   "account": "mtvkivvupd99w2",
+   "amount": 15,
+   "cat": "other",
+   "created": 1790586211126,
+   "cur": "KWD",
+   "date": "2026-09-28",
+   "desc": "Embassy Attestation",
+   "month": "2026-09"
+  },
+  "muns2wabvr5kax": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5,
+   "cat": "other",
+   "created": 1790752966643,
+   "cur": "KWD",
+   "date": "2026-09-30",
+   "desc": "Document Attestation",
+   "month": "2026-09"
+  },
+  "muns34ojx8a7ma": {
+   "account": "mtvkivvupd99w2",
+   "amount": 6,
+   "cat": "other",
+   "created": 1790752977523,
+   "cur": "KWD",
+   "date": "2026-09-29",
+   "desc": "Lunch",
+   "month": "2026-09"
+  },
+  "mupboduiiclorb": {
+   "account": "mtvkivvupd99w2",
+   "amount": 16.31,
+   "cat": "phone",
+   "created": 1790846348058,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Zain Bill",
+   "month": "2026-10"
+  },
+  "mupbqqcmlsg68z": {
+   "account": "mtvkivvupd99w2",
+   "amount": 42,
+   "cat": "phone",
+   "created": 1790846457574,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Stc Bill",
+   "month": "2026-10"
+  },
+  "mupcr8j9bwupcy": {
+   "account": "mtvkivvupd99w2",
+   "amount": 156.5,
+   "cat": "loan",
+   "created": 1790848160757,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "AMex Bill",
+   "month": "2026-10"
+  },
+  "muph17hv9ngvc4": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5,
+   "cat": "dining",
+   "created": 1790855344435,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "murd9dqr0v3ytz": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.575,
+   "cat": "transport",
+   "created": 1790969939667,
+   "cur": "KWD",
+   "date": "2026-10-02",
+   "desc": "Petrol",
+   "month": "2026-10"
+  },
+  "murd9nxa768aub": {
+   "account": "mtvkivvupd99w2",
+   "amount": 29.5,
+   "cat": "dining",
+   "created": 1790969952862,
+   "cur": "KWD",
+   "date": "2026-10-02",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "murda7tgzzm92l": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.05,
+   "cat": "dining",
+   "created": 1790969978644,
+   "cur": "KWD",
+   "date": "2026-10-02",
+   "desc": "Bakala",
+   "month": "2026-10"
+  },
+  "murdbojdwn0f4h": {
+   "account": "mtvkivvupd99w2",
+   "amount": 44.205,
+   "cat": "groceries",
+   "created": 1790970046969,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Lulu",
+   "month": "2026-10"
+  },
+  "murdcqfctd5lhc": {
+   "account": "mtvkivvupd99w2",
+   "amount": 9,
+   "cat": "dining",
+   "created": 1790970096072,
+   "cur": "KWD",
+   "date": "2026-10-01",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "muvj5emdr2ixar": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.35,
+   "cat": "dining",
+   "created": 1791221696581,
+   "cur": "KWD",
+   "date": "2026-10-05",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "muvj5szjidcrm2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.065,
+   "cat": "groceries",
+   "created": 1791221715199,
+   "cur": "KWD",
+   "date": "2026-10-05",
+   "desc": "Bread",
+   "month": "2026-10"
+  },
+  "muvj609mq38hn0": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10,
+   "cat": "groceries",
+   "created": 1791221724634,
+   "cur": "KWD",
+   "date": "2026-10-05",
+   "desc": "Umar Exp",
+   "month": "2026-10"
+  },
+  "muvj6leaoaat2i": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11.1,
+   "cat": "groceries",
+   "created": 1791221752018,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Faiza Cake",
+   "month": "2026-10"
+  },
+  "muvj7z5go21z78": {
+   "account": "mtvkivvupd99w2",
+   "amount": 12.92,
+   "cat": "dining",
+   "created": 1791221816500,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "muvj87nimmi6vc": {
+   "account": "mtvkivvupd99w2",
+   "amount": 15,
+   "cat": "groceries",
+   "created": 1791221827518,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Flowers",
+   "month": "2026-10"
+  },
+  "muvj8ghin0che6": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.8,
+   "cat": "groceries",
+   "created": 1791221838966,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Sultan Exp",
+   "month": "2026-10"
+  },
+  "muvj8tgqt7gd03": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.8,
+   "cat": "dining",
+   "created": 1791221855786,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "muvj97ao1wmq10": {
+   "account": "mtvkivvupd99w2",
+   "amount": 151,
+   "cat": "health",
+   "created": 1791221873712,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Eye Check up",
+   "month": "2026-10"
+  },
+  "muvj9sj13gz7kg": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.454,
+   "cat": "groceries",
+   "created": 1791221901229,
+   "cur": "KWD",
+   "date": "2026-10-04",
+   "desc": "Juices",
+   "month": "2026-10"
+  },
+  "muvjasr8knw1vp": {
+   "account": "mtvkivvupd99w2",
+   "amount": 28.5,
+   "cat": "dining",
+   "created": 1791221948180,
+   "cur": "KWD",
+   "date": "2026-10-03",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "muvjb2ivwe7n2u": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.575,
+   "cat": "transport",
+   "created": 1791221960839,
+   "cur": "KWD",
+   "date": "2026-10-03",
+   "desc": "Petrol",
+   "month": "2026-10"
+  },
+  "muvjbitmoorphg": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.05,
+   "cat": "groceries",
+   "created": 1791221981962,
+   "cur": "KWD",
+   "date": "2026-10-03",
+   "desc": "Bakala",
+   "month": "2026-10"
+  },
+  "muwm6lfth19eto": {
+   "account": "mtvkivvupd99w2",
+   "amount": 6.65,
+   "cat": "dining",
+   "created": 1791287257097,
+   "cur": "KWD",
+   "date": "2026-10-06",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "muwm6v2n68225y": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.8,
+   "cat": "groceries",
+   "created": 1791287269583,
+   "cur": "KWD",
+   "date": "2026-10-06",
+   "desc": "hakimi",
+   "month": "2026-10"
+  },
+  "muwm8l38pvid9f": {
+   "account": "mtvklxclcq0025",
+   "amount": 6,
+   "cat": "subs",
+   "created": 1791287349956,
+   "cur": "KWD",
+   "date": "2026-10-06",
+   "desc": "Hermes Subscription",
+   "month": "2026-10"
+  },
+  "muxyb3sg8tr6f2": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 113.458,
+   "cat": "loan",
+   "created": 1791368089072,
+   "cur": "KWD",
+   "date": "2026-10-07",
+   "desc": "Visa Fees",
+   "month": "2026-10"
+  },
+  "muxybk1o3s5pa2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.75,
+   "cat": "dining",
+   "created": 1791368110140,
+   "cur": "KWD",
+   "date": "2026-10-07",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mv1yzhdyrkdws3": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.5,
+   "cat": "dining",
+   "created": 1791611091142,
+   "cur": "KWD",
+   "date": "2026-10-10",
+   "desc": "Breakfast",
+   "month": "2026-10"
+  },
+  "mv1z04qsmex97j": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11.35,
+   "cat": "transport",
+   "created": 1791611121412,
+   "cur": "KWD",
+   "date": "2026-10-10",
+   "desc": "Petrol",
+   "month": "2026-10"
+  },
+  "mv1z0kchp6u7og": {
+   "account": "mtvkivvupd99w2",
+   "amount": 91.32,
+   "cat": "groceries",
+   "created": 1791611141633,
+   "cur": "KWD",
+   "date": "2026-08-10",
+   "desc": "lulu",
+   "month": "2026-08"
+  },
+  "mv1z0wb2o0o7oo": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.35,
+   "cat": "dining",
+   "created": 1791611157134,
+   "cur": "KWD",
+   "date": "2026-08-10",
+   "desc": "dinner",
+   "month": "2026-08"
+  },
+  "mv6dqlk815dx1w": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.3,
+   "cat": "dining",
+   "created": 1791877735592,
+   "cur": "KWD",
+   "date": "2026-10-12",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mv6dqzb52eyore": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.4,
+   "cat": "dining",
+   "created": 1791877753409,
+   "cur": "KWD",
+   "date": "2026-10-11",
+   "desc": "Cofferr",
+   "month": "2026-10"
+  },
+  "mv6drs4f91bk4k": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.45,
+   "cat": "dining",
+   "created": 1791877790751,
+   "cur": "KWD",
+   "date": "2026-10-10",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "mv6ds645gubidb": {
+   "account": "mtvkivvupd99w2",
+   "amount": 1.5,
+   "cat": "shopping",
+   "created": 1791877808885,
+   "cur": "KWD",
+   "date": "2026-10-10",
+   "desc": "Crochet",
+   "month": "2026-10"
+  },
+  "mv6dso4j8hr0uh": {
+   "account": "mtvkivvupd99w2",
+   "amount": 15,
+   "cat": "other",
+   "created": 1791877832227,
+   "cur": "KWD",
+   "date": "2026-10-10",
+   "desc": "Licence Faiza",
+   "month": "2026-10"
+  },
+  "mv6dt95w94ffpg": {
+   "account": "mtvkj3bs35xy11",
+   "amount": 400,
+   "cat": "fun",
+   "created": 1791877859492,
+   "cur": "KWD",
+   "date": "2026-10-12",
+   "desc": "Salt Chalet",
+   "month": "2026-10"
+  },
+  "mv7radcuxpu6w9": {
+   "account": "mtvkivvupd99w2",
+   "amount": 55.65,
+   "cat": "health",
+   "created": 1791960959262,
+   "cur": "KWD",
+   "date": "2026-10-13",
+   "desc": "Anfaal Dentist",
+   "month": "2026-10"
+  },
+  "mv7rb0xujyd6p6": {
+   "account": "mtvkivvupd99w2",
+   "amount": 43.88,
+   "cat": "shopping",
+   "created": 1791960989826,
+   "cur": "KWD",
+   "date": "2026-10-13",
+   "desc": "Temu",
+   "month": "2026-10"
+  },
+  "mv7rcj0cncz4j4": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.2,
+   "cat": "dining",
+   "created": 1791961059900,
+   "cur": "KWD",
+   "date": "2026-10-13",
+   "desc": "Ice cream",
+   "month": "2026-10"
+  },
+  "mvdhwflv5f9zrl": {
+   "account": "mtvkivvupd99w2",
+   "amount": 9.85,
+   "cat": "dining",
+   "created": 1792307989507,
+   "cur": "KWD",
+   "date": "2026-10-17",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "mvdhwq10ee5dby": {
+   "account": "mtvkivvupd99w2",
+   "amount": 16.2,
+   "cat": "dining",
+   "created": 1792308003012,
+   "cur": "KWD",
+   "date": "2026-10-17",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mvdhx0fuv8dojr": {
+   "account": "mtvkivvupd99w2",
+   "amount": 12.25,
+   "cat": "transport",
+   "created": 1792308016506,
+   "cur": "KWD",
+   "date": "2026-10-17",
+   "desc": "Petrol",
+   "month": "2026-10"
+  },
+  "mvdhxm9v10idsd": {
+   "account": "mtvkivvupd99w2",
+   "amount": 11,
+   "cat": "personal",
+   "created": 1792308044803,
+   "cur": "KWD",
+   "date": "2026-10-17",
+   "desc": "Salon Raed and Faisal",
+   "month": "2026-10"
+  },
+  "mvdi6ekr8t34kk": {
+   "account": "mtvkivvupd99w2",
+   "amount": 58.8,
+   "cat": "shopping",
+   "created": 1792308454731,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "American Eagle",
+   "month": "2026-10"
+  },
+  "mvdi6rrwk6xchj": {
+   "account": "mtvkivvupd99w2",
+   "amount": 31.5,
+   "cat": "shopping",
+   "created": 1792308471837,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "LC waiki",
+   "month": "2026-10"
+  },
+  "mvdi727xy06q0t": {
+   "account": "mtvkivvupd99w2",
+   "amount": 15.75,
+   "cat": "shopping",
+   "created": 1792308485373,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "PUFF",
+   "month": "2026-10"
+  },
+  "mvdi7ezyx0l566": {
+   "account": "mtvkivvupd99w2",
+   "amount": 16.5,
+   "cat": "shopping",
+   "created": 1792308501934,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Anfaal Bag",
+   "month": "2026-10"
+  },
+  "mvdi7q8xvs0ziw": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.65,
+   "cat": "shopping",
+   "created": 1792308516513,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Flying Tiger",
+   "month": "2026-10"
+  },
+  "mvdi9lx6v2mfci": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5,
+   "cat": "transport",
+   "created": 1792308604218,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Car Wash",
+   "month": "2026-10"
+  },
+  "mvdia50jduqi6d": {
+   "account": "mtvkivvupd99w2",
+   "amount": 57,
+   "cat": "shopping",
+   "created": 1792308628963,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Marks and Spencer",
+   "month": "2026-10"
+  },
+  "mvdibkq8nb1oaj": {
+   "account": "mtvkivvupd99w2",
+   "amount": 4.95,
+   "cat": "dining",
+   "created": 1792308695984,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Snacks",
+   "month": "2026-10"
+  },
+  "mvdiby4dfqyr16": {
+   "account": "mtvkivvupd99w2",
+   "amount": 7.65,
+   "cat": "dining",
+   "created": 1792308713341,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "mvdicczlqoy1e2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 2.91,
+   "cat": "health",
+   "created": 1792308732609,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Medicine",
+   "month": "2026-10"
+  },
+  "mvdics1fwhunk6": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 5,
+   "cat": "phone",
+   "created": 1792308752115,
+   "cur": "KWD",
+   "date": "2026-10-16",
+   "desc": "Open Ai subscription",
+   "month": "2026-10"
+  },
+  "mvdie2h0uxzkn3": {
+   "account": "mtvkhnlqjpwrah",
+   "amount": 200000,
+   "cat": "invest",
+   "created": 1792308812292,
+   "cur": "INR",
+   "date": "2026-10-17",
+   "desc": "Jio Ipo",
+   "month": "2026-10"
+  },
+  "mvgfdn6np3l2x2": {
+   "account": "mtvkivvupd99w2",
+   "amount": 77,
+   "cat": "groceries",
+   "created": 1792485152159,
+   "cur": "KWD",
+   "date": "2026-10-19",
+   "desc": "Lulu",
+   "month": "2026-10"
+  },
+  "mvggs3zflfdrx9": {
+   "account": "mtvkivvupd99w2",
+   "amount": 50,
+   "cat": "household",
+   "created": 1792487506731,
+   "cur": "KWD",
+   "date": "2026-10-19",
+   "desc": "Home Centre",
+   "month": "2026-10"
+  },
+  "mvggsom8hdcm69": {
+   "account": "mtvkivvupd99w2",
+   "amount": 13.15,
+   "cat": "groceries",
+   "created": 1792487533472,
+   "cur": "KWD",
+   "date": "2026-10-19",
+   "desc": "Charcoal Fusion",
+   "month": "2026-10"
+  },
+  "mvggt08fzw4kcg": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.5,
+   "cat": "dining",
+   "created": 1792487548527,
+   "cur": "KWD",
+   "date": "2026-10-19",
+   "desc": "Coffee",
+   "month": "2026-10"
+  },
+  "mvggus5q3we8a9": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.55,
+   "cat": "dining",
+   "created": 1792487631374,
+   "cur": "KWD",
+   "date": "2026-10-19",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mvggw0tf2vbzkl": {
+   "account": "mtvkivvupd99w2",
+   "amount": 15.25,
+   "cat": "shopping",
+   "created": 1792487689251,
+   "cur": "KWD",
+   "date": "2026-10-18",
+   "desc": "Toys",
+   "month": "2026-10"
+  },
+  "mvggwlfvasmrub": {
+   "account": "mtvkivvupd99w2",
+   "amount": 5.15,
+   "cat": "dining",
+   "created": 1792487715979,
+   "cur": "KWD",
+   "date": "2026-10-18",
+   "desc": "Coffee",
+   "month": "2026-10"
+  },
+  "mvggwwrkff440e": {
+   "account": "mtvkivvupd99w2",
+   "amount": 37,
+   "cat": "health",
+   "created": 1792487730656,
+   "cur": "KWD",
+   "date": "2026-10-18",
+   "desc": "Anfaal Dental",
+   "month": "2026-10"
+  },
+  "mvggxq4lah5gt3": {
+   "account": "mtvkivvupd99w2",
+   "amount": 1.5,
+   "cat": "dining",
+   "created": 1792487768709,
+   "cur": "KWD",
+   "date": "2026-10-18",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mvggy4wbdpgdhg": {
+   "account": "mtvkivvupd99w2",
+   "amount": 52,
+   "cat": "transport",
+   "created": 1792487787851,
+   "cur": "KWD",
+   "date": "2026-10-18",
+   "desc": "Nissan Service",
+   "month": "2026-10"
+  },
+  "mvgh08jojdfsy1": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 5.5,
+   "cat": "subs",
+   "created": 1792487885892,
+   "cur": "KWD",
+   "date": "2026-10-18",
+   "desc": "Netflix",
+   "month": "2026-10"
+  },
+  "mvgh0qv23hc6xz": {
+   "account": "mtvkivvupd99w2",
+   "amount": 40,
+   "cat": "shopping",
+   "created": 1792487909630,
+   "cur": "KWD",
+   "date": "2026-10-20",
+   "desc": "Perfume",
+   "month": "2026-10"
+  },
+  "mvgh11b2wxxodw": {
+   "account": "mtvkivvupd99w2",
+   "amount": 32,
+   "cat": "shopping",
+   "created": 1792487923166,
+   "cur": "KWD",
+   "date": "2026-10-20",
+   "desc": "Faiza Clothes",
+   "month": "2026-10"
+  },
+  "mvj5o9kavq0kq7": {
+   "account": "mtvkivvupd99w2",
+   "amount": 9.3,
+   "cat": "dining",
+   "created": 1792650250090,
+   "cur": "KWD",
+   "date": "2026-10-21",
+   "desc": "Dinner",
+   "month": "2026-10"
+  },
+  "mvj5oo5q24ehki": {
+   "account": "mtvkivvupd99w2",
+   "amount": 1.5,
+   "cat": "other",
+   "created": 1792650269006,
+   "cur": "KWD",
+   "date": "2026-10-21",
+   "desc": "Laundry",
+   "month": "2026-10"
+  },
+  "mvj5oyqozyhykt": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.4,
+   "cat": "groceries",
+   "created": 1792650282720,
+   "cur": "KWD",
+   "date": "2026-10-21",
+   "desc": "Groceries",
+   "month": "2026-10"
+  },
+  "mvj5pws9hpg8qp": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 4,
+   "cat": "subs",
+   "created": 1792650326841,
+   "cur": "KWD",
+   "date": "2026-10-21",
+   "desc": "Google One",
+   "month": "2026-10"
+  },
+  "mvj5rajwmmig4o": {
+   "account": "mtvkivvupd99w2",
+   "amount": 10.9,
+   "cat": "dining",
+   "created": 1792650391340,
+   "cur": "KWD",
+   "date": "2026-10-20",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mvj5rngkxu7k35": {
+   "account": "mtvkivvupd99w2",
+   "amount": 39.5,
+   "cat": "shopping",
+   "created": 1792650408068,
+   "cur": "KWD",
+   "date": "2026-10-20",
+   "desc": "Wonder Range Faiza",
+   "month": "2026-10"
+  },
+  "mvmml3cc4qq0jb": {
+   "account": "mtvkivvupd99w2",
+   "amount": 3.6,
+   "cat": "dining",
+   "created": 1792860054060,
+   "cur": "KWD",
+   "date": "2026-10-24",
+   "desc": "Breakfast",
+   "month": "2026-10"
+  },
+  "mvmmlglk3t19gk": {
+   "account": "mtvkivvupd99w2",
+   "amount": 7.5,
+   "cat": "dining",
+   "created": 1792860071240,
+   "cur": "KWD",
+   "date": "2026-10-23",
+   "desc": "Coffee",
+   "month": "2026-10"
+  },
+  "mvmmm1v3vy0846": {
+   "account": "mtvkivvupd99w2",
+   "amount": 27.65,
+   "cat": "dining",
+   "created": 1792860098799,
+   "cur": "KWD",
+   "date": "2026-10-23",
+   "desc": "Lunch",
+   "month": "2026-10"
+  },
+  "mvmmpipa0ttm27": {
+   "account": "mtvkivvupd99w2",
+   "amount": 16,
+   "cat": "dining",
+   "created": 1792860260590,
+   "cur": "KWD",
+   "date": "2026-10-23",
+   "desc": "Breakfast",
+   "month": "2026-10"
+  },
+  "mvmmq14ah4wuwv": {
+   "account": "mtvklo5kn0k7cl",
+   "amount": 3,
+   "cat": "subs",
+   "created": 1792860284458,
+   "cur": "KWD",
+   "date": "2026-10-23",
+   "desc": "VPn",
+   "month": "2026-10"
+  }
+ },
+ "months": {
+  "2026-09": {
+   "sources": [
+    {
+     "amount": 2183,
+     "cur": "KWD",
+     "id": "s-salary",
+     "name": "Salary"
+    },
+    {
+     "amount": 1200,
+     "cur": "KWD",
+     "id": "s-rent",
+     "name": "Sales Commission-1"
+    },
+    {
+     "amount": 322,
+     "cur": "KWD",
+     "id": "mub99o8rb3w43v",
+     "name": "Sales Commission-2"
+    }
+   ]
+  },
+  "2026-10": {
+   "sources": [
+    {
+     "amount": 2183,
+     "cur": "KWD",
+     "id": "muejp3g73wv3d1",
+     "name": "Salary"
+    },
+    {
+     "amount": 322,
+     "cur": "KWD",
+     "id": "mul0qrpeeepq6q",
+     "name": "Sales commission"
+    },
+    {
+     "amount": 1200,
+     "cur": "KWD",
+     "id": "muwm8rxdtzjos0",
+     "name": "Sales Commission-2"
+    }
+   ]
+  }
+ },
+ "settings": {
+  "app": {
+   "display": "KWD",
+   "rate": 308,
+   "rateDate": "2026-09-09"
+  }
+ }
+}
