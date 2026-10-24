@@ -1,0 +1,972 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<style>
+  :root{
+    color-scheme: light;
+    --page:      #eaebe3;
+    --surface:   #f7f7f2;
+    --surface-2: #f1f1ea;
+    --ink:       #14181f;
+    --ink-soft:  #565b56;
+    --ink-faint: #8b8f84;
+    --hair:      #d9dace;
+    --hair-strong:#c7c8ba;
+    --accent:    #a6721e;
+    --accent-ink:#5c3f10;
+    --accent-soft: #ecdfc2;
+    --good:      #0ca30c;
+    --critical:  #d03b3b;
+    --chip:      #e3e1d3;
+
+    --gold:   #eda100;
+    --silver: #2a78d6;
+    --btc:    #eb6834;
+    --oil:    #4a3aa7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --page:      #10131a;
+      --surface:   #191d25;
+      --surface-2: #1e232c;
+      --ink:       #f1f0e9;
+      --ink-soft:  #b8bcb2;
+      --ink-faint: #797d73;
+      --hair:      #2b3038;
+      --hair-strong:#3a3f47;
+      --accent:    #d9a040;
+      --accent-ink:#f4d99b;
+      --accent-soft: rgba(217,160,64,0.14);
+      --good:      #0ca30c;
+      --critical:  #d03b3b;
+      --chip:      #262b33;
+
+      --gold:   #c98500;
+      --silver: #3987e5;
+      --btc:    #d95926;
+      --oil:    #9085e9;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --page:      #10131a;
+    --surface:   #191d25;
+    --surface-2: #1e232c;
+    --ink:       #f1f0e9;
+    --ink-soft:  #b8bcb2;
+    --ink-faint: #797d73;
+    --hair:      #2b3038;
+    --hair-strong:#3a3f47;
+    --accent:    #d9a040;
+    --accent-ink:#f4d99b;
+    --accent-soft: rgba(217,160,64,0.14);
+    --good:      #0ca30c;
+    --critical:  #d03b3b;
+    --chip:      #262b33;
+
+    --gold:   #c98500;
+    --silver: #3987e5;
+    --btc:    #d95926;
+    --oil:    #9085e9;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--page);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;}
+  .tab-nums{font-variant-numeric:tabular-nums;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px 72px;}
+
+  /* ---------- Masthead ---------- */
+  .masthead{
+    padding:40px 0 26px;
+    border-bottom:2px solid var(--ink);
+    display:flex;justify-content:space-between;align-items:flex-end;
+    gap:24px;flex-wrap:wrap;
+  }
+  .brand-title{
+    font-family:"Newsreader", Georgia, "Times New Roman", serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:clamp(34px,5vw,52px);
+    letter-spacing:-0.01em;
+    line-height:1;
+    margin:0;
+    text-wrap:balance;
+  }
+  .brand-sub{
+    margin:8px 0 0;
+    color:var(--ink-soft);
+    font-size:14.5px;
+    max-width:46ch;
+  }
+  .masthead-meta{
+    text-align:right;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+    letter-spacing:.02em;
+    line-height:1.7;
+  }
+  .masthead-meta .edition{
+    color:var(--accent);
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:11px;
+  }
+  .voice-controls{
+    margin-top:12px;
+    display:flex;justify-content:flex-end;align-items:center;gap:8px;
+  }
+  .voice-btn{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11px;font-weight:600;letter-spacing:.04em;
+    color:var(--accent-ink);
+    background:var(--accent-soft);
+    border:1px solid var(--hair-strong);
+    border-radius:20px;
+    padding:6px 14px;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .voice-btn:hover{filter:brightness(0.97);}
+  .voice-btn:disabled{opacity:0.45;cursor:default;}
+  .voice-stop{
+    background:transparent;
+    color:var(--ink-faint);
+    padding:6px 10px;
+  }
+
+  /* ---------- Section scaffolding ---------- */
+  section{margin-top:52px;}
+  .sec-head{
+    display:flex;align-items:baseline;gap:14px;
+    margin-bottom:18px;
+    border-bottom:1px solid var(--hair-strong);
+    padding-bottom:10px;
+  }
+  .kicker{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent-ink);
+    background:var(--accent-soft);
+    padding:4px 9px;border-radius:3px;
+    white-space:nowrap;
+  }
+  .sec-title{
+    font-family:"Newsreader", Georgia, serif;
+    font-weight:600;
+    font-size:22px;
+    margin:0;
+    text-wrap:balance;
+  }
+  .sec-note{
+    margin-left:auto;font-size:12px;color:var(--ink-faint);
+    font-family:"IBM Plex Mono",monospace;
+    white-space:nowrap;
+  }
+
+  /* ---------- World briefing ---------- */
+  .briefing{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+    background:var(--surface);
+    border:1px solid var(--hair);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .region{
+    padding:20px 20px 22px;
+    border-left:1px solid var(--hair);
+  }
+  .region:first-child{border-left:none;}
+  .region-name{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 14px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .region-name::after{
+    content:"";flex:1;height:1px;background:var(--hair);
+  }
+  .headline{padding:12px 0;border-top:1px solid var(--hair);}
+  .headline:first-of-type{border-top:none;padding-top:0;}
+  .headline h4{
+    margin:0 0 5px;font-size:14.5px;line-height:1.3;font-weight:600;
+    text-wrap:balance;
+  }
+  .headline p{
+    margin:0;font-size:12.8px;line-height:1.5;color:var(--ink-soft);
+  }
+
+  /* ---------- Markets: stat tiles with sparkline ---------- */
+  .tiles{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+  }
+  .tile{
+    background:var(--surface);
+    border:1px solid var(--hair);
+    border-radius:8px;
+    padding:18px 18px 14px;
+    display:flex;flex-direction:column;gap:10px;
+  }
+  .tile-top{display:flex;justify-content:space-between;align-items:flex-start;}
+  .tile-name{font-size:13px;font-weight:600;color:var(--ink-soft);}
+  .tile-unit{font-size:10.5px;color:var(--ink-faint);}
+  .tile-dot{width:9px;height:9px;border-radius:50%;flex:none;margin-top:4px;}
+  .tile-value{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:25px;font-weight:600;letter-spacing:-0.01em;
+  }
+  .tile-change{
+    display:inline-flex;align-items:center;gap:5px;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:12.5px;font-weight:600;width:fit-content;
+  }
+  .tile-change.up{color:var(--good);}
+  .tile-change.down{color:var(--critical);}
+  .tile-change .arrow{font-size:11px;}
+  .spark-wrap{margin-top:2px;}
+  .spark-wrap svg{display:block;width:100%;height:56px;overflow:visible;}
+  .tile-foot{
+    display:flex;justify-content:space-between;
+    font-size:10.5px;color:var(--ink-faint);
+    font-family:"IBM Plex Mono",monospace;
+    padding-top:4px;border-top:1px dashed var(--hair);
+  }
+  .spark-tooltip{
+    position:absolute;pointer-events:none;
+    background:var(--ink);color:var(--page);
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11px;padding:4px 7px;border-radius:4px;
+    transform:translate(-50%,-130%);white-space:nowrap;
+    opacity:0;transition:opacity .1s ease;z-index:5;
+  }
+  .tile-chart-box{position:relative;}
+
+  /* ---------- Indices strip ---------- */
+  .idx-strip{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  }
+  .idx-card{
+    background:var(--surface);border:1px solid var(--hair);border-radius:8px;
+    padding:18px 20px;
+  }
+  .idx-market{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);font-family:"IBM Plex Mono",monospace;}
+  .idx-name{font-size:15px;font-weight:600;margin:3px 0 10px;}
+  .idx-value{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:600;}
+  .idx-change{margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;}
+  .idx-change.up{color:var(--good);}
+  .idx-change.down{color:var(--critical);}
+
+  /* ---------- India section ---------- */
+  .india-grid{
+    display:grid;grid-template-columns:1.3fr 1fr;gap:16px;
+    align-items:stretch;
+  }
+  @media (max-width:860px){.india-grid{grid-template-columns:1fr;}}
+  .panel{
+    background:var(--surface);border:1px solid var(--hair);border-radius:8px;
+    padding:18px 20px;
+  }
+  table.idx-table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  table.idx-table thead th{
+    text-align:left;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);
+    padding:0 0 8px;font-weight:600;border-bottom:1px solid var(--hair-strong);
+  }
+  table.idx-table td{
+    padding:10px 0;border-bottom:1px solid var(--hair);
+    font-family:"IBM Plex Mono",monospace;
+  }
+  table.idx-table td.name{font-family:"IBM Plex Sans",sans-serif;font-weight:600;}
+  table.idx-table tr:last-child td{border-bottom:none;}
+  table.idx-table td.num{text-align:right;}
+  .updown{font-weight:600;}
+  .updown.up{color:var(--good);}
+  .updown.down{color:var(--critical);}
+  .updown.flat{color:var(--ink-faint);}
+
+  .movers-title{
+    font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    margin:0 0 10px;display:flex;align-items:center;gap:7px;
+  }
+  .movers-title.gain{color:var(--good);}
+  .movers-title.loss{color:var(--critical);}
+  .mover-row{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:8px 0;border-top:1px solid var(--hair);font-size:13.5px;
+  }
+  .mover-row:first-of-type{border-top:none;}
+  .mover-name{font-weight:600;}
+  .mover-price{color:var(--ink-faint);font-family:"IBM Plex Mono",monospace;font-size:11.5px;margin-left:6px;}
+  .mover-pct{font-family:"IBM Plex Mono",monospace;font-weight:600;}
+  .movers-block + .movers-block{margin-top:18px;}
+
+  /* ---------- Weather ---------- */
+  .weather-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:700px){.weather-grid{grid-template-columns:1fr;}}
+  .wx-card{
+    background:var(--surface);border:1px solid var(--hair);border-radius:8px;
+    padding:22px 22px 18px;display:flex;gap:18px;align-items:center;
+  }
+  .wx-icon{flex:none;width:64px;height:64px;}
+  .wx-city{font-size:15px;font-weight:600;margin:0 0 2px;}
+  .wx-cond{font-size:13px;color:var(--ink-soft);margin:0 0 10px;}
+  .wx-temp{font-family:"IBM Plex Mono",monospace;font-size:30px;font-weight:600;line-height:1;}
+  .wx-temp small{font-size:14px;color:var(--ink-faint);font-weight:500;margin-left:4px;}
+  .wx-meta{display:flex;gap:14px;margin-top:9px;font-size:11.5px;color:var(--ink-faint);font-family:"IBM Plex Mono",monospace;flex-wrap:wrap;}
+  .wx-meta span{white-space:nowrap;}
+
+  footer{
+    margin-top:56px;padding-top:18px;border-top:1px solid var(--hair-strong);
+    font-size:11.5px;color:var(--ink-faint);line-height:1.7;
+  }
+  footer a{color:var(--ink-faint);}
+
+  @media (max-width:920px){
+    .briefing{grid-template-columns:repeat(2,1fr);}
+    .region{border-left:1px solid var(--hair);}
+    .region:nth-child(2n+1){border-left:none;}
+    .region:nth-child(n+3){border-top:1px solid var(--hair);}
+    .tiles{grid-template-columns:repeat(2,1fr);}
+    .idx-strip{grid-template-columns:1fr;}
+  }
+  @media (max-width:560px){
+    .briefing{grid-template-columns:1fr;}
+    .region{border-left:none !important;border-top:1px solid var(--hair);}
+    .region:first-child{border-top:none;}
+    .tiles{grid-template-columns:1fr;}
+    .wrap{padding:0 16px 56px;}
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <h1 class="brand-title">Faisal's Morning Brief</h1>
+      <p class="brand-sub">A single read on the world's headlines, metals, crypto and the Indian market — plus the sky over Kuwait City and Mumbai.</p>
+    </div>
+    <div class="masthead-meta">
+      <div class="edition">Morning Edition</div>
+      Saturday, 24 October&nbsp;2026<br>
+      Compiled for Kuwait (UTC+3)
+      <div class="voice-controls">
+        <button id="voiceBtn" class="voice-btn" type="button">▶ Listen to Briefing</button>
+        <button id="voiceStopBtn" class="voice-btn voice-stop" type="button" hidden>■ Stop</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WORLD BRIEFING ============ -->
+  <section>
+    <div class="sec-head">
+      <span class="kicker">01</span>
+      <h2 class="sec-title">World Briefing</h2>
+      <span class="sec-note">Middle East → India → Europe → USA</span>
+    </div>
+    <div class="briefing">
+      <div class="region">
+        <p class="region-name">Middle East</p>
+        <div class="headline">
+          <h4>Israel says it foiled West Bank "terror attack" near Hebron</h4>
+          <p>Troops killed two gunmen in an attack the army called targeted at Israeli civilians; the prime minister's office ordered preparations for a full closure of the West Bank ahead of Tuesday's election.</p>
+        </div>
+        <div class="headline">
+          <h4>Gunmen open fire on a church in Jordan's Karak</h4>
+          <p>Attackers fired on worshippers in Karak, about 180km south of Amman, killing and wounding several; no group had claimed responsibility as authorities investigated.</p>
+        </div>
+        <div class="headline">
+          <h4>Houthi strikes on Saudi oil sites send crude to five-month high</h4>
+          <p>Attacks on Saudi Arabia's oil infrastructure stoked fresh supply fears, with Brent topping $116 a barrel and WTI pushing above $100 amid broader Strait of Hormuz tensions.</p>
+        </div>
+        <div class="headline">
+          <h4>UNICEF: over 350 children killed in Gaza since October 2025 deal</h4>
+          <p>The agency said child deaths have continued despite last year's ceasefire agreement, while the World Food Programme cut its aid caseload from 1.6 million to 1.1 million people amid bread shortages.</p>
+        </div>
+      </div>
+      <div class="region">
+        <p class="region-name">India</p>
+        <div class="headline">
+          <h4>Infosys reports September-quarter results, dividend decision</h4>
+          <p>The IT bellwether announced its Q2 FY27 earnings and a dividend call Friday, with the stock in focus through the session as investors weighed the numbers against guidance.</p>
+        </div>
+        <div class="headline">
+          <h4>Modi accuses Congress of courting "disorder" amid global shift</h4>
+          <p>Prime Minister Narendra Modi told the NDTV World Summit that the opposition Congress party "dreams of disorder" while the world seeks a new order, and called for reform of multilateral institutions to give the Global South a greater voice.</p>
+        </div>
+        <div class="headline">
+          <h4>Sensex, Nifty close lower for a fourth straight session</h4>
+          <p>Benchmark indices slipped Friday as surging crude oil prices and weakness in metal, energy and financial stocks weighed on sentiment; the volatility index rose about 6%.</p>
+        </div>
+        <div class="headline">
+          <h4>Poland seeks deeper defence-export ties with India</h4>
+          <p>Warsaw signalled interest in expanding defence exports and industrial cooperation with India, part of broader efforts between the two countries to boost bilateral trade.</p>
+        </div>
+      </div>
+      <div class="region">
+        <p class="region-name">Europe</p>
+        <div class="headline">
+          <h4>EU leaders join Budapest's 1956 uprising anniversary</h4>
+          <p>Ursula von der Leyen and António Costa attended Budapest's 70th-anniversary commemoration, part of a broader diplomatic thaw with Hungary as the country's political mood shifts.</p>
+        </div>
+        <div class="headline">
+          <h4>Macron bars protests not organised by unions</h4>
+          <p>France's main student union condemned the move as an attack on the right to protest, after the president restricted demonstrations to union-organised events.</p>
+        </div>
+        <div class="headline">
+          <h4>About 150,000 rally in Belgrade against Vučić</h4>
+          <p>Crowds marched through the Serbian capital ahead of Sunday's parliamentary election, in one of the largest demonstrations against President Aleksandar Vučić in years.</p>
+        </div>
+        <div class="headline">
+          <h4>Polish minister resigns amid coalition rift</h4>
+          <p>Development and regional-funds minister Katarzyna Pełczyńska-Nałęcz stepped down after a dispute within Donald Tusk's coalition over term limits for local authorities.</p>
+        </div>
+      </div>
+      <div class="region">
+        <p class="region-name">USA</p>
+        <div class="headline">
+          <h4>Wall Street closes a rocky week lower on AI-spending jitters</h4>
+          <p>The Nasdaq Composite slipped to 25,955.34 (−0.21%) Friday, extending a week dominated by doubts over heavy AI-infrastructure spending after Thursday's steep tech-led selloff.</p>
+        </div>
+        <div class="headline">
+          <h4>DOJ charges Virginia Senate leader with racketeering</h4>
+          <p>Federal prosecutors charged Virginia state Senate majority leader Louise Lucas with racketeering and money-laundering conspiracy tied to a cannabis business she co-owns with family.</p>
+        </div>
+        <div class="headline">
+          <h4>Trump administration weighing new strikes on Iran, officials say</h4>
+          <p>U.S. Ambassador Mike Waltz told the Financial Times the standoff with Tehran could last another year, as tensions over the Strait of Hormuz continued.</p>
+        </div>
+        <div class="headline">
+          <h4>ICE agents filmed attempting to take toddlers from father in Rhode Island</h4>
+          <p>Footage from Providence showed agents trying to take two young children from their Guatemalan father, drawing fresh scrutiny of immigration-enforcement tactics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMODITIES & CRYPTO ============ -->
+  <section>
+    <div class="sec-head">
+      <span class="kicker">02</span>
+      <h2 class="sec-title">Metals, Crude &amp; Crypto</h2>
+      <span class="sec-note">12-month trend, USD</span>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <!-- ============ GLOBAL INDICES ============ -->
+  <section>
+    <div class="sec-head">
+      <span class="kicker">03</span>
+      <h2 class="sec-title">Global Indices</h2>
+      <span class="sec-note">US &amp; India closed for the weekend · Fri 23 Oct close</span>
+    </div>
+    <div class="idx-strip">
+      <div class="idx-card">
+        <div class="idx-market">Nasdaq · United States</div>
+        <div class="idx-name">Nasdaq Composite</div>
+        <div class="idx-value tab-nums">25,955.34</div>
+        <div class="idx-change down tab-nums">▼ 53.52&nbsp;&nbsp;(−0.21%)</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-market">BSE · India</div>
+        <div class="idx-name">Sensex</div>
+        <div class="idx-value tab-nums">73,123.83</div>
+        <div class="idx-change down tab-nums">▼ 125.56&nbsp;&nbsp;(−0.17%)</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-market">NSE · India</div>
+        <div class="idx-name">Nifty 50</div>
+        <div class="idx-value tab-nums">22,600.00</div>
+        <div class="idx-change down tab-nums">▼ 87.65&nbsp;&nbsp;(−0.39%)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INDIA MARKET WATCH ============ -->
+  <section>
+    <div class="sec-head">
+      <span class="kicker">04</span>
+      <h2 class="sec-title">India Market Watch</h2>
+      <span class="sec-note">Fri 23 Oct close · NSE/BSE closed Saturday</span>
+    </div>
+    <div class="india-grid">
+      <div class="panel">
+        <table class="idx-table">
+          <thead>
+            <tr><th>Index</th><th class="num">Level</th><th class="num">Change</th><th class="num">% Chg</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="name">Sensex</td>
+              <td class="num tab-nums">73,123.83</td>
+              <td class="num tab-nums updown down">−125.56</td>
+              <td class="num tab-nums updown down">−0.17%</td>
+            </tr>
+            <tr>
+              <td class="name">Nifty 50</td>
+              <td class="num tab-nums">22,600.00</td>
+              <td class="num tab-nums updown down">−87.65</td>
+              <td class="num tab-nums updown down">−0.39%</td>
+            </tr>
+            <tr>
+              <td class="name">Bank Nifty</td>
+              <td class="num tab-nums">54,287.35</td>
+              <td class="num tab-nums updown down">−638.35</td>
+              <td class="num tab-nums updown down">−1.16%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="movers-block">
+          <p class="movers-title gain">▲ Top Gainers</p>
+          <div class="mover-row"><span class="mover-name">Eternal<span class="mover-price">₹317.40</span></span><span class="mover-pct updown up">+4.25%</span></div>
+          <div class="mover-row"><span class="mover-name">Apollo Hospitals<span class="mover-price">₹7,730.00</span></span><span class="mover-pct updown up">+1.65%</span></div>
+          <div class="mover-row"><span class="mover-name">ONGC<span class="mover-price">₹227.50</span></span><span class="mover-pct updown up">+1.11%</span></div>
+        </div>
+        <div class="movers-block">
+          <p class="movers-title loss">▼ Top Losers</p>
+          <div class="mover-row"><span class="mover-name">Shriram Finance<span class="mover-price">₹865.00</span></span><span class="mover-pct updown down">−3.98%</span></div>
+          <div class="mover-row"><span class="mover-name">Adani Enterprises<span class="mover-price">₹2,477.00</span></span><span class="mover-pct updown down">−2.86%</span></div>
+          <div class="mover-row"><span class="mover-name">JSW Steel<span class="mover-price">₹1,185.50</span></span><span class="mover-pct updown down">−2.83%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WEATHER ============ -->
+  <section>
+    <div class="sec-head">
+      <span class="kicker">05</span>
+      <h2 class="sec-title">Sky Report</h2>
+      <span class="sec-note">Kuwait City &amp; Mumbai</span>
+    </div>
+    <div class="weather-grid">
+      <div class="wx-card">
+        <svg class="wx-icon" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="10" fill="var(--gold)" opacity="0.85"/>
+          <path d="M14 42a13 13 0 0 1 3-25 15 15 0 0 1 28 5 11 11 0 0 1-2 22H18a4 4 0 0 1-4-2Z" fill="var(--ink-faint)" opacity="0.3"/>
+          <g stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" opacity="0.55">
+            <line x1="32" y1="6" x2="32" y2="12"/>
+            <line x1="9" y1="20" x2="14" y2="23"/>
+            <line x1="55" y1="20" x2="50" y2="23"/>
+            <line x1="4" y1="32" x2="11" y2="32"/>
+          </g>
+        </svg>
+        <div>
+          <p class="wx-city">Kuwait City</p>
+          <p class="wx-cond">Hazy sunshine</p>
+          <div class="wx-temp tab-nums">26°C<small>79°F</small></div>
+          <div class="wx-meta">
+            <span>H 37° / L 24°</span>
+            <span>Humidity 44%</span>
+            <span>Wind 10 km/h</span>
+            <span>Rain 1%</span>
+          </div>
+        </div>
+      </div>
+      <div class="wx-card">
+        <svg class="wx-icon" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="10" fill="var(--gold)" opacity="0.85"/>
+          <g stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" opacity="0.6">
+            <line x1="32" y1="6" x2="32" y2="12"/>
+            <line x1="32" y1="52" x2="32" y2="58"/>
+            <line x1="9" y1="20" x2="14" y2="23"/>
+            <line x1="55" y1="20" x2="50" y2="23"/>
+            <line x1="9" y1="44" x2="14" y2="41"/>
+            <line x1="55" y1="44" x2="50" y2="41"/>
+            <line x1="4" y1="32" x2="11" y2="32"/>
+            <line x1="60" y1="32" x2="53" y2="32"/>
+          </g>
+        </svg>
+        <div>
+          <p class="wx-city">Mumbai</p>
+          <p class="wx-cond">Partly sunny, humid</p>
+          <div class="wx-temp tab-nums">31°C<small>88°F</small></div>
+          <div class="wx-meta">
+            <span>H 35° / L 28°</span>
+            <span>Humidity 57%</span>
+            <span>Wind 12 km/h</span>
+            <span>Rain 1%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Snapshot compiled 24 October 2026, ~07:50 Kuwait time (10:20 IST), from public news, market and weather sources; prices and headlines move throughout the day. Commodity/crypto sparklines trace the approximate 12-month shape from aggregated public market data (monthly anchors, final point current), not a tick-by-tick feed. Both US and Indian equity markets were closed for the weekend at compile time, so the Nasdaq Composite, Sensex, Nifty 50 and Bank Nifty all reflect Friday's (23 October) close rather than a live session, and the India top-gainer/loser list likewise reflects Friday's session. Gold and silver spot prices and the WTI crude figure are the latest available quotes and can differ slightly across data providers and venues — treat the figures here as approximate and verify against your own source before trading on them. Bitcoin trades 24/7, so its "today" change is measured against the prior UTC day's close rather than an official market close. Weather readings are drawn from the latest available live observations and forecasts and may lag the exact compile moment by a short while. I'm not fully certain every figure below matches the final, officially revised close from each exchange — these are the best publicly available numbers at compile time and are worth double-checking against a live terminal before acting on them.
+    <br>
+    Sources: <a href="https://www.clickondetroit.com/news/world/2026/10/23/israel-says-it-thwarted-terror-attack-and-other-middle-east-developments/" target="_blank" rel="noopener">AP via ClickOnDetroit — Middle East developments, 23 October</a>, <a href="https://www.democracynow.org/2026/10/23/headlines" target="_blank" rel="noopener">Democracy Now! — Headlines, 23 October</a>, <a href="https://www.riotimesonline.com/europe-intelligence-brief-friday-october-23-2026/" target="_blank" rel="noopener">Rio Times Online — Europe Intelligence Brief, 23 October</a>, <a href="https://www.yahoo.com/news/articles/noon-headlines-october-23-2026-165531098.html" target="_blank" rel="noopener">Yahoo News — Noon Headlines, 23 October</a>, <a href="https://www.psuconnect.in/corporate-news/infosys-to-announce-q2-results-on-october-23-2026" target="_blank" rel="noopener">PSU Connect — Infosys Q2 results date</a>, <a href="https://www.business-standard.com/markets/news/stock-market-live-october-23-nse-bse-sensex-today-nifty50-gift-nifty-crude-oil-prices-jio-ipo-q2-results-today-126102300078_1.html" target="_blank" rel="noopener">Business Standard — Market Live, 23 October</a>, <a href="https://blog.liquide.life/share-market-today-nifty-slips-to-22-600-sensex-falls-126-points-as-metal-energy-and-financial-stocks-drag-markets-lower/" target="_blank" rel="noopener">Liquide — Sensex/Nifty/Bank Nifty close, 23 October</a>, <a href="https://www.angelone.in/news/market-updates/top-gainers-and-losers-on-october-23-2026-eternal-and-apollo-hospitals-gain-while-shriram-finance-drops-over-3" target="_blank" rel="noopener">Angel One — Top gainers &amp; losers, 23 October</a>, <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262236830-us-market-close-dow-drop-consumer-healthcare-chips-rebound-crowdstrike-tradingkey" target="_blank" rel="noopener">TradingKey — US markets close, 23 October</a>, <a href="https://www.profilenews.com/en/oil-prices-today-2/" target="_blank" rel="noopener">ProfileNews (Reuters data) — Oil prices, 23 October</a>, Alpha Vantage — gold/silver spot &amp; history, WTI history, Bitcoin daily/monthly series, market status, <a href="https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html" target="_blank" rel="noopener">CNBC — Oil prices and Middle East tensions</a>, AccuWeather — Kuwait City &amp; Mumbai forecasts.
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  const months = ["Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct"];
+
+  const series = [
+    {
+      key:"gold", name:"Gold", unit:"USD / troy oz", color:"var(--gold)",
+      data:[4030.31,4222.77,4354.15,4890.35,5278.79,4518.50,4560.71,4539.25,4012.18,4101.40,4460.16,4185.44,3995.98],
+      value:"$3,995.98", change:-0.70, changeAbs:"−$28.37 today", foot:"12-mo high ~$5,278.79 · Feb 2026"
+    },
+    {
+      key:"silver", name:"Silver", unit:"USD / troy oz", color:"var(--silver)",
+      data:[49.01,56.39,75.27,85.31,93.78,69.88,71.99,75.29,58.31,59.11,66.53,61.45,53.92],
+      value:"$53.92", change:-0.98, changeAbs:"−$0.53 today", foot:"12-mo high ~$93.78 · Feb 2026"
+    },
+    {
+      key:"btc", name:"Bitcoin", unit:"USD", color:"var(--btc)",
+      data:[109555.27,90369.51,87497.94,78648.00,66967.85,68221.85,76305.78,73575.17,58523.93,62825.90,78562.74,83556.14,80642.94],
+      value:"$80,642.94", change:-0.54, changeAbs:"−$435 today", foot:"12-mo high ~$109,555 · Oct 2025"
+    },
+    {
+      key:"oil", name:"Crude Oil (WTI)", unit:"USD / barrel", color:"var(--oil)",
+      data:[60.89,60.06,57.97,60.04,64.51,91.38,100.32,102.13,84.81,80.46,83.90,97.31,100.84],
+      value:"$100.84", change:1.40, changeAbs:"+$1.37 today", foot:"12-mo high ~$102.13 · May 2026 (Hormuz/Houthi risk keeps it elevated)"
+    }
+  ];
+
+  function fmtCompact(n){
+    if(n>=1000) return Math.round(n).toLocaleString();
+    return n.toFixed(2);
+  }
+
+  function buildSpark(s){
+    const w=260,h=56,pad=4;
+    const min=Math.min(...s.data), max=Math.max(...s.data);
+    const range=(max-min)||1;
+    const stepX=(w-pad*2)/(s.data.length-1);
+    const pts=s.data.map((v,i)=>{
+      const x=pad+i*stepX;
+      const y=pad+(1-(v-min)/range)*(h-pad*2);
+      return [x,y];
+    });
+    const linePath="M"+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join(" L");
+    const areaPath=linePath+` L${pts[pts.length-1][0].toFixed(1)},${h} L${pts[0][0].toFixed(1)},${h} Z`;
+    const last=pts[pts.length-1];
+
+    const svgns="http://www.w3.org/2000/svg";
+    const svg=document.createElementNS(svgns,"svg");
+    svg.setAttribute("viewBox",`0 0 ${w} ${h}`);
+    svg.setAttribute("preserveAspectRatio","none");
+
+    const gradId="grad-"+s.key;
+    svg.innerHTML=`
+      <defs>
+        <linearGradient id="${gradId}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${s.color}" stop-opacity="0.28"/>
+          <stop offset="100%" stop-color="${s.color}" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="${areaPath}" fill="url(#${gradId})" stroke="none"></path>
+      <path d="${linePath}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+      <circle cx="${last[0]}" cy="${last[1]}" r="3.2" fill="${s.color}"></circle>
+      <line class="hoverline" x1="0" y1="0" x2="0" y2="${h}" stroke="var(--ink-faint)" stroke-width="1" stroke-dasharray="2,2" opacity="0"></line>
+      <circle class="hoverdot" r="3.6" fill="${s.color}" stroke="var(--surface)" stroke-width="1.4" opacity="0"></circle>
+    `;
+
+    const hoverline=svg.querySelector(".hoverline");
+    const hoverdot=svg.querySelector(".hoverdot");
+
+    return {svg, pts, w, h, hoverline, hoverdot};
+  }
+
+  const wrap=document.getElementById("tiles");
+
+  series.forEach(s=>{
+    const chartData=buildSpark(s);
+    const tile=document.createElement("div");
+    tile.className="tile";
+
+    const dir = s.change>=0 ? "up":"down";
+    const arrow = s.change>=0 ? "▲":"▼";
+
+    tile.innerHTML=`
+      <div class="tile-top">
+        <div>
+          <div class="tile-name">${s.name}</div>
+          <div class="tile-unit">${s.unit}</div>
+        </div>
+        <span class="tile-dot" style="background:${s.color}"></span>
+      </div>
+      <div class="tile-value tab-nums">${s.value}</div>
+      <div class="tile-change ${dir} tab-nums"><span class="arrow">${arrow}</span>${Math.abs(s.change).toFixed(2)}% <span style="color:var(--ink-faint);font-weight:500;">— ${s.changeAbs}</span></div>
+      <div class="tile-chart-box">
+        <div class="spark-wrap"></div>
+        <div class="spark-tooltip"></div>
+      </div>
+      <div class="tile-foot"><span>${s.foot}</span><span>12 mo</span></div>
+    `;
+    tile.querySelector(".spark-wrap").appendChild(chartData.svg);
+    wrap.appendChild(tile);
+
+    const box=tile.querySelector(".tile-chart-box");
+    const tooltip=tile.querySelector(".spark-tooltip");
+    const svgEl=chartData.svg;
+
+    function handleMove(evt){
+      const rect=svgEl.getBoundingClientRect();
+      const relX=((evt.clientX-rect.left)/rect.width)*chartData.w;
+      let nearest=0, bestDist=Infinity;
+      chartData.pts.forEach((p,i)=>{
+        const d=Math.abs(p[0]-relX);
+        if(d<bestDist){bestDist=d;nearest=i;}
+      });
+      const p=chartData.pts[nearest];
+      const px=(p[0]/chartData.w)*rect.width;
+      const py=(p[1]/chartData.h)*rect.height;
+      chartData.hoverline.setAttribute("x1",p[0]);
+      chartData.hoverline.setAttribute("x2",p[0]);
+      chartData.hoverline.setAttribute("opacity","0.9");
+      chartData.hoverdot.setAttribute("cx",p[0]);
+      chartData.hoverdot.setAttribute("cy",p[1]);
+      chartData.hoverdot.setAttribute("opacity","1");
+      tooltip.style.left=px+"px";
+      tooltip.style.top=py+"px";
+      tooltip.style.opacity="1";
+      tooltip.textContent=months[nearest]+"  "+fmtCompact(s.data[nearest]);
+    }
+    function handleLeave(){
+      chartData.hoverline.setAttribute("opacity","0");
+      chartData.hoverdot.setAttribute("opacity","0");
+      tooltip.style.opacity="0";
+    }
+    svgEl.addEventListener("mousemove",handleMove);
+    svgEl.addEventListener("mouseleave",handleLeave);
+    svgEl.addEventListener("touchmove",(e)=>{if(e.touches[0])handleMove(e.touches[0]);},{passive:true});
+    svgEl.addEventListener("touchend",handleLeave);
+  });
+})();
+</script>
+
+<script>
+(function(){
+  const btn=document.getElementById("voiceBtn");
+  const stopBtn=document.getElementById("voiceStopBtn");
+  if(!btn||!stopBtn) return;
+
+  if(!("speechSynthesis" in window)){
+    btn.textContent="Voice not supported";
+    btn.disabled=true;
+    return;
+  }
+
+  let state="idle"; // idle | playing | paused
+
+  // ---- Jarvis-style voice selection ----
+  // Prefers a calm, refined, lower-register male voice (British where available),
+  // in the spirit of a poised AI-assistant read — closest fit among voices the
+  // browser/OS actually ships, since exact third-party voices aren't selectable.
+  let chosenVoice=null;
+  const VOICE_PREFERENCE=[
+    "Daniel (English (United Kingdom))",
+    "Daniel",
+    "Microsoft Ryan Online (Natural) - English (United Kingdom)",
+    "Microsoft Ryan",
+    "Microsoft George - English (United Kingdom)",
+    "Microsoft George",
+    "Microsoft Thomas Online (Natural) - English (United Kingdom)",
+    "Google UK English Male",
+    "Microsoft Guy Online (Natural) - English (United States)",
+    "Microsoft Guy",
+    "Arthur",
+    "Oliver",
+    "Alex",
+    "Fred"
+  ];
+  function pickVoice(){
+    const voices=window.speechSynthesis.getVoices()||[];
+    if(!voices.length) return null;
+    for(const wanted of VOICE_PREFERENCE){
+      const hit=voices.find(v=>v.name===wanted);
+      if(hit) return hit;
+    }
+    // Fuzzy match: any voice whose name contains a preferred token
+    for(const wanted of VOICE_PREFERENCE){
+      const hit=voices.find(v=>v.name.toLowerCase().includes(wanted.toLowerCase()));
+      if(hit) return hit;
+    }
+    // Any British English male-leaning voice
+    const gb=voices.find(v=>/en-GB|en_GB/i.test(v.lang) && !/female/i.test(v.name));
+    if(gb) return gb;
+    // Any English voice at all
+    const en=voices.find(v=>/^en/i.test(v.lang));
+    return en||voices[0];
+  }
+  function ensureVoice(){
+    if(!chosenVoice){
+      chosenVoice=pickVoice();
+    }
+    return chosenVoice;
+  }
+  ensureVoice();
+  if("onvoiceschanged" in window.speechSynthesis){
+    window.speechSynthesis.onvoiceschanged=function(){ chosenVoice=pickVoice(); };
+  }
+
+  function textOf(el){
+    return el ? el.textContent.replace(/\s+/g," ").trim() : "";
+  }
+
+  // First text node of an element (skips nested spans, e.g. price inside a mover name)
+  function ownText(el){
+    if(!el) return "";
+    for(const node of el.childNodes){
+      if(node.nodeType===Node.TEXT_NODE && node.textContent.trim()){
+        return node.textContent.trim();
+      }
+    }
+    return textOf(el);
+  }
+
+  function pctOf(changeEl){
+    if(!changeEl) return "";
+    const m=textOf(changeEl).match(/([+\-−▲▼]?\s?[\d.]+%)/);
+    return m ? m[0].replace(/^[▲▼]\s*/,"") : textOf(changeEl);
+  }
+
+  function buildScript(){
+    const parts=[];
+    const dateLine=textOf(document.querySelector(".masthead-meta"))
+      .replace("Morning Edition","").replace("Compiled for Kuwait (UTC+3)","").trim();
+    parts.push("Faisal's Morning Brief. Morning edition" + (dateLine ? ", " + dateLine + "." : "."));
+
+    // 1. World Briefing — headlines only
+    parts.push("World Briefing.");
+    document.querySelectorAll(".region").forEach(region=>{
+      const name=textOf(region.querySelector(".region-name"));
+      const heads=[...region.querySelectorAll(".headline h4")].map(h=>textOf(h));
+      if(name && heads.length){
+        parts.push(name+": "+heads.join(". ")+".");
+      }
+    });
+
+    // 2. Metals, Crude & Crypto — value + change only
+    parts.push("Metals, Crude and Crypto.");
+    document.querySelectorAll("#tiles .tile").forEach(tile=>{
+      const name=textOf(tile.querySelector(".tile-name"));
+      const value=textOf(tile.querySelector(".tile-value"));
+      const changeEl=tile.querySelector(".tile-change");
+      const dir=changeEl && changeEl.classList.contains("up") ? "up" : "down";
+      const pct=pctOf(changeEl);
+      if(name){
+        parts.push(`${name} ${value}, ${dir} ${pct}.`);
+      }
+    });
+
+    // 3. Global Indices
+    parts.push("Global Indices.");
+    document.querySelectorAll(".idx-card").forEach(card=>{
+      const name=textOf(card.querySelector(".idx-name"));
+      const value=textOf(card.querySelector(".idx-value"));
+      const changeEl=card.querySelector(".idx-change");
+      const dir=changeEl && changeEl.classList.contains("up") ? "up" : "down";
+      const pct=pctOf(changeEl);
+      if(name){
+        parts.push(`${name} ${value}, ${dir} ${pct}.`);
+      }
+    });
+
+    // 4. India Market Watch — index table + top mover only per side
+    parts.push("India Market Watch.");
+    document.querySelectorAll(".idx-table tbody tr").forEach(tr=>{
+      const cells=tr.querySelectorAll("td");
+      if(cells.length>=4){
+        const name=textOf(cells[0]);
+        const value=textOf(cells[1]);
+        const pct=textOf(cells[3]);
+        parts.push(`${name} ${value}, ${pct}.`);
+      }
+    });
+    document.querySelectorAll(".movers-block").forEach(block=>{
+      const title=textOf(block.querySelector(".movers-title")).replace(/[▲▼]/g,"").trim();
+      const firstRow=block.querySelector(".mover-row");
+      if(firstRow){
+        const name=ownText(firstRow.querySelector(".mover-name"));
+        const pct=textOf(firstRow.querySelector(".mover-pct"));
+        parts.push(`${title}: ${name}, ${pct}.`);
+      }
+    });
+
+    // 5. Sky Report
+    parts.push("Sky Report.");
+    document.querySelectorAll(".wx-card").forEach(card=>{
+      const city=textOf(card.querySelector(".wx-city"));
+      const cond=textOf(card.querySelector(".wx-cond"));
+      const temp=ownText(card.querySelector(".wx-temp"));
+      if(city){
+        parts.push(`${city}: ${cond}, ${temp}.`);
+      }
+    });
+
+    return parts.join(" ");
+  }
+
+  function setState(next){
+    state=next;
+    if(state==="idle"){
+      btn.textContent="▶ Listen to Briefing";
+      stopBtn.hidden=true;
+    } else if(state==="playing"){
+      btn.textContent="⏸ Pause";
+      stopBtn.hidden=false;
+    } else if(state==="paused"){
+      btn.textContent="▶ Resume";
+      stopBtn.hidden=false;
+    }
+  }
+
+  btn.addEventListener("click",function(){
+    if(state==="idle"){
+      const text=buildScript();
+      window.speechSynthesis.cancel();
+      const utter=new SpeechSynthesisUtterance(text);
+      const voice=ensureVoice();
+      if(voice) utter.voice=voice;
+      utter.rate=0.93;
+      utter.pitch=0.82;
+      utter.volume=1;
+      utter.onend=function(){ setState("idle"); };
+      utter.onerror=function(){ setState("idle"); };
+      window.speechSynthesis.speak(utter);
+      setState("playing");
+    } else if(state==="playing"){
+      window.speechSynthesis.pause();
+      setState("paused");
+    } else if(state==="paused"){
+      window.speechSynthesis.resume();
+      setState("playing");
+    }
+  });
+
+  stopBtn.addEventListener("click",function(){
+    window.speechSynthesis.cancel();
+    setState("idle");
+  });
+
+  window.addEventListener("beforeunload",function(){
+    window.speechSynthesis.cancel();
+  });
+})();
+</script>
+
+</body></html>
